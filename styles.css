@@ -1,0 +1,82 @@
+/* Reset */
+html, body, div, 
+h1,  p
+ {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+:root{
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    /* font */
+    --main-font: "Outfit", sans-serif;
+
+    /* Weight */
+    --light: 400;
+    --bold: 700;
+}
+
+body{
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--main-font);
+}
+
+.container{
+    width: 350px;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: var(--dark-blue);
+    font-size: 30px;
+    text-align: center;
+    margin: 2rem auto;
+    line-height: 2.25rem;
+}
+
+img{
+    min-width: 75%;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+p{
+    margin: 2rem auto;
+    width: 90%;
+    font-size: 15px;
+    color: var(--grayish-blue);
+    text-align: center;
+    line-height: 1.65rem;
+}
